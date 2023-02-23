@@ -8,9 +8,9 @@ Created on Thu Feb 23 20:19:42 2023
 import re
 from pytube import Playlist
 
-DOWNLOAD_DIR = 'D:\\ML_DL\\Files_ML_DL\\Violence_files\\Violence_classis_Dataset\\Physical_Voilence\\Python_downlaods\\kicks_real_scenes'
+DOWNLOAD_DIR = 'Path to the downlaod folder'
 
-playlist = Playlist('https://www.youtube.com/playlist?list=PL7A2BF5EE83A36AC4')
+playlist = Playlist('Playlist url')
 
 # this fixes the empty playlist.videos list
 playlist._video_regex = re.compile(r"\"url\":\"(/watch\?v=[\w-]*)")
